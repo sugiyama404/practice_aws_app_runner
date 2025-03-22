@@ -4,7 +4,7 @@ resource "null_resource" "default" {
   }
 
   provisioner "local-exec" {
-    command = "docker build -t ${var.image_name} --file ../apserver/Dockerfile ../apserver/"
+    command = "docker build -t ${var.image_name} --file ../webserver/Dockerfile ../webserver/"
   }
 
   provisioner "local-exec" {
