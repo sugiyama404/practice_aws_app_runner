@@ -15,9 +15,3 @@ variable "image_name" {
   type        = string
   default     = "chatbot"
 }
-
-variable "api_port" {
-  description = "api port"
-  type        = number
-  default     = 3000
-}
